@@ -1,0 +1,47 @@
+.container-payment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.container-payment__item {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-payment__img {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.bank {
+    background-image: url(../img/icons/bank.png);
+}
+
+.cash {
+    background-image: url(../img/icons/cash.png);
+}
+
+.mastercard {
+    background-image: url(../img/icons/mastercard.png);
+}
+
+.visa {
+    background-image: url(../img/icons/visa.png);
+}
+
+.container-payment__text {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.select-car {
+    max-width: 264px;
+    margin: auto;
+    margin-bottom: 80px;
+}

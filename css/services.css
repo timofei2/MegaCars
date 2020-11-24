@@ -1,0 +1,46 @@
+.container-serv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container-serv__quote, .container-serv__text {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-serv__quote {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    white-space: pre-line;
+}
+
+.container-serv__text {
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.container-number {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.container-number__number {
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.container-number__number span {
+    font-size: 50px;
+    font-weight: 700;
+    color: #C5AEAE;
+}
+
+.container-number__number p {
+    width: 170px;
+}

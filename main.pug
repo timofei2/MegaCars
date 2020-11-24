@@ -1,0 +1,40 @@
+
+
+mixin header()
+    header.header
+        .header-content.container
+            a(href="index.html" class="logo") 
+            nav(class="menu-link")
+                a(href="car-park.html" class="menu-link__item") автопарк
+                a(href="services.html" class="menu-link__item") услуги
+                a(href="pay.html" class="menu-link__item") способы оплаты
+                a(href="about.html" class="menu-link__item") о компании
+                a(href="contacts.html" class="menu-link__item") контакты 
+            a(href="tel:+7(910)3337777" class="number") +7 (910) 333 77 77
+
+mixin footer()
+    footer.footer
+        .container.container-footer
+            .container-logo-copiter
+                .logo-dark
+                .copiter 2020 Все права защищены
+            nav.link-social
+                a(href="#" class="link-social__item") Vkontacte
+                a(href="#" class="link-social__item") Instagram 
+                a(href="#" class="link-social__item") Telegram
+                a(href="#" class="link-social__item") Avito
+            
+
+block variables
+
+doctype html
+html(lang="ru")
+    head
+        title= pageTitle
+        link(rel="stylesheet" href="css/header-footer.css")
+        link(rel="stylesheet" href="css/ui-kit.css")
+        link(rel="stylesheet" href= mainStyle)
+        script(src="js/jquery-3.3.1.min.js")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet")
+    body
+        block content

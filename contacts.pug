@@ -1,0 +1,50 @@
+extends main
+
+block variables
+    - var pageTitle = 'Контакты'
+    - var mainStyle = href="css/contacts.css"
+
+block content
+    +header()
+
+    main(class="main-wrapper container")
+        h2(class="main-title") контакты megacars
+        .container-contacts
+            .container-contacts__item
+                .container-contacts__img.phone
+                a(href="tel:+7(910)3337777" class="container-contacts__contact").
+                    +7 (910) 333 77 77
+            .container-contacts__item
+                .container-contacts__img.smartphone
+                a(href="#" class="container-contacts__contact container-contacts__social").
+                    Avito
+                a(href="#" class="container-contacts__contact container-contacts__social").
+                    Telegram
+                a(href="#" class="container-contacts__contact container-contacts__social").
+                    Instagram
+                a(href="#" class="container-contacts__contact container-contacts__social").
+                    Vkontacte
+                a(href="email:megacars@gmail.com" class="container-contacts__contact container-contacts__social").
+                    megacars@...
+            .container-contacts__item
+                .container-contacts__img.map
+                .container-contacts__contact.
+                    г. Москва, ул. Арбат, д.8
+
+        form(action="#" class="form form-contact")
+                div(class="form__figure form__figure-big" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical")
+                div(class="form__figure-small" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical")
+                div(class="form__figure-average" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical")
+                script.
+                    $(function () {
+                        $(window).paroller();
+                    });
+                .form__title оставить заявку
+                .form__content 
+                    .form__info-users Ваше имя
+                    input(type="text" class="form__fields" placeholder="Оскар Хартман")
+                    .form__info-users Ваш номер
+                    input(type="text" class="form__fields" placeholder="+7 (910) 333 77 77")
+                    button(class="btn form__btn") отправить
+    script(src="js/jquery.paroller.js")
+    +footer()

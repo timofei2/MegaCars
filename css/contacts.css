@@ -1,0 +1,78 @@
+.container-contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 62px;
+}
+
+.container-contacts__item {
+    background-color: #FBFBFD;
+    padding: 60px 74px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 1%;
+    border-radius: 8px;
+}
+
+.container-contacts__img {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.phone {
+    background-image: url(../img/icons/phone.png);
+}
+
+.smartphone {
+    background-image: url(../img/icons/smartphone.png);
+}
+
+.map {
+    background-image: url(../img/icons/map.png);
+}
+
+.container-contacts__contact {
+    display: block;
+}
+
+.container-contacts__social {
+    margin-bottom: 10px;
+}
+
+.container-contacts__social:last-child {
+    margin-bottom: 0;
+}
+
+.form-contact {
+    width: 100%;
+    margin-bottom: 74px;
+}
+
+.form__figure-big {
+    left: 35%;
+    transform: translateY(-50%);
+}
+
+.form__figure-average {
+    position: absolute;
+    right: 35%;
+    bottom: 20%;
+    background-image: url(../img/average-form.png);
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 98px;
+}
+
+.form__figure-small {
+    position: absolute;
+    right: 40%;
+    background-image: url(../img/small-form.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 34px;
+}

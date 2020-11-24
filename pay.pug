@@ -1,0 +1,26 @@
+extends main
+
+block variables
+    - var pageTitle = 'Способы оплаты'
+    - var mainStyle = href="css/pay.css"
+
+block content
+    +header()
+    main(class="main-wrapper container")
+        h2(class="main-title") оплатить можно
+
+        .container-payment
+            .container-payment__item
+                .container-payment__img.bank
+                .container-payment__text переводом банка
+            .container-payment__item
+                .container-payment__img.cash
+                .container-payment__text наличными
+            .container-payment__item
+                .container-payment__img.mastercard
+                .container-payment__text mastercard
+            .container-payment__item
+                .container-payment__img.visa
+                .container-payment__text visa
+        a(href="car-park.html" class="btn select-car") выбрать авто
+    +footer()

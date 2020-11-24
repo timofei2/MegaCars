@@ -1,0 +1,42 @@
+extends main
+
+block variables
+    - var pageTitle = 'Автопарк'
+    
+block content
+    +header()
+
+    main(class="main-wrapper")
+        h2(class="main-title") автопарк MegaCars
+
+        .car
+            .content-car.container
+                .content-car__side.content-car__photo.content-car__largus
+
+                .content-car__side
+                    .content-car__container
+                        a(class="content-car__title" href="#") Лада Ларгус Фургон
+                        .content-car__starting-price
+                            span от
+                            span 1300
+                            span р
+
+                        a(href="#" class="btn content-car__btn") арендовать
+
+        .car
+            .content-car.container
+                .content-car__side
+                    .content-car__container
+                        a(class="content-car__title" href="#").
+                            Газель Некст
+                            Рефрижератор
+                        .content-car__starting-price
+                            span от
+                            span 3500
+                            span р
+                            
+                        a(href="#" class="btn content-car__btn") арендовать
+
+                .content-car__side.content-car__photo.content-car__gazel-next
+
+    +footer()

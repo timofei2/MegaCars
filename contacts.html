@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/ui-kit.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content container"><a class="logo" href="index.html"> </a>
+        <nav class="menu-link"><a class="menu-link__item" href="car-park.html">автопарк</a><a class="menu-link__item" href="services.html">услуги</a><a class="menu-link__item" href="pay.html">способы оплаты</a><a class="menu-link__item" href="about.html">о компании</a><a class="menu-link__item" href="contacts.html">контакты </a></nav><a class="number" href="tel:+7(910)3337777">+7 (910) 333 77 77</a>
+      </div>
+    </header>
+    <main class="main-wrapper container">
+      <h2 class="main-title">контакты megacars</h2>
+      <div class="container-contacts">
+        <div class="container-contacts__item">
+          <div class="container-contacts__img phone"></div><a class="container-contacts__contact" href="tel:+7(910)3337777">+7 (910) 333 77 77</a>
+        </div>
+        <div class="container-contacts__item">
+          <div class="container-contacts__img smartphone"></div><a class="container-contacts__contact container-contacts__social" href="#">Avito</a><a class="container-contacts__contact container-contacts__social" href="#">Telegram</a><a class="container-contacts__contact container-contacts__social" href="#">Instagram</a><a class="container-contacts__contact container-contacts__social" href="#">Vkontacte</a><a class="container-contacts__contact container-contacts__social" href="email:megacars@gmail.com">megacars@...</a>
+        </div>
+        <div class="container-contacts__item">
+          <div class="container-contacts__img map"></div>
+          <div class="container-contacts__contact">
+            г. Москва, ул. Арбат, д.8
+            
+          </div>
+        </div>
+      </div>
+      <form class="form form-contact" action="#">
+        <div class="form__figure form__figure-big" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></div>
+        <div class="form__figure-small" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></div>
+        <div class="form__figure-average" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></div>
+        <script>
+          $(function () {
+              $(window).paroller();
+          });
+        </script>
+        <div class="form__title">оставить заявку</div>
+        <div class="form__content"> 
+          <div class="form__info-users">Ваше имя</div>
+          <input class="form__fields" type="text" placeholder="Оскар Хартман">
+          <div class="form__info-users">Ваш номер</div>
+          <input class="form__fields" type="text" placeholder="+7 (910) 333 77 77">
+          <button class="btn form__btn">отправить</button>
+        </div>
+      </form>
+    </main>
+    <script src="js/jquery.paroller.js"></script>
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="container-logo-copiter">
+          <div class="logo-dark"></div>
+          <div class="copiter">2020 Все права защищены</div>
+        </div>
+        <nav class="link-social"><a class="link-social__item" href="#">Vkontacte</a><a class="link-social__item" href="#">Instagram </a><a class="link-social__item" href="#">Telegram</a><a class="link-social__item" href="#">Avito</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>

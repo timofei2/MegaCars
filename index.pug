@@ -1,0 +1,166 @@
+extends main
+
+block variables
+    - var pageTitle = 'MegaCars'
+    - var mainStyle = href="css/style.css"
+
+block content
+    +header()
+
+    main(class="main-wrapper")
+        section(class="first-screen container")
+            form(action="#" class="form")
+                div(class="form__figure" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical")
+                script.
+                    $(function () {
+                        $(window).paroller();
+                    });
+                .form__title оставить заявку
+                .form__content 
+                    .form__info-users Ваше имя
+                    input(type="text" class="form__fields" placeholder="Оскар Хартман")
+                    .form__info-users Ваш номер
+                    input(type="text" class="form__fields" placeholder="+7 (910) 333 77 77")
+                    button(class="btn form__btn") отправить
+
+            .first-car
+                .first-car__img-car
+                    .first-car__starting-price
+                        span от
+                        span 1300
+                        span р
+
+        section(class="how-work container")
+            h2(class="main-title") как работает mega
+                span(class="main-title__red-text") cars
+
+            .container-steps
+                .step-work
+                    .step-work__img.search-auto
+                    .step-work__title Найти Авто
+                    p(class="step-work__text").
+                        Выбирете авто
+                        из нашег автопарка
+                .step-work__arrow
+                .step-work
+                    .step-work__img.send-request
+                    .step-work__title Оставить Заявку
+                    p(class="step-work__text").
+                        Напишите любым
+                        удобным для вас способом
+                .step-work__arrow
+                .step-work
+                    .step-work__img.take-car
+                    .step-work__title Забрать Авто
+                    p(class="step-work__text").
+                        Получите ключи
+                        и катайтесь с удовольствием
+
+        .car
+            .content-car.container
+                .content-car__side.content-car__photo.content-car__largus
+
+                .content-car__side
+                    .content-car__container
+                        a(class="content-car__title" href="#") Лада Ларгус Фургон
+                        .content-car__starting-price
+                            span от
+                            span 1300
+                            span р
+
+                        a(href="#" class="btn content-car__btn") арендовать
+
+        .car
+            .content-car.container
+                .content-car__side
+                    .content-car__container
+                        a(class="content-car__title" href="#").
+                            Газель Некст
+                            Рефрижератор
+                        .content-car__starting-price
+                            span от
+                            span 3500
+                            span р
+                            
+                        a(href="#" class="btn content-car__btn") арендовать
+
+                .content-car__side.content-car__photo.content-car__gazel-next
+
+        section.others-cars.container
+            h2.main-title.title-others-cars.
+                другие автомобили
+            .container-cards 
+                .card-car
+                    a(class="card-car__img" href="#")
+                    .card-car__bottom-side
+                        a(href="#" class="card-car__title").
+                            Лада Ларгус
+                            Универсал (7 мест)
+                        .card-car__starting-price
+                            span от
+                            span 3500
+                            span р
+                        a(href="#" class="card-car__btn btn").
+                            арендовать
+                .card-car
+                    a(class="card-car__img" href="#")
+                    .card-car__bottom-side
+                        a(href="#" class="card-car__title").
+                            Лада Ларгус
+                            Универсал (7 мест)
+                        .card-car__starting-price
+                            span от
+                            span 3500
+                            span р
+                        a(href="#" class="card-car__btn btn").
+                            арендовать
+                .card-car
+                    a(class="card-car__img" href="#")
+                    .card-car__bottom-side
+                        a(href="#" class="card-car__title").
+                            Лада Ларгус
+                            Универсал (7 мест)
+                        .card-car__starting-price
+                            span от
+                            span 3500
+                            span р
+                        a(href="#" class="card-car__btn btn").
+                            арендовать
+            a(href="#" class="btn-all btn") все авто
+
+        .reviews.container
+            h2.main-title.
+                что говорят наши клиенты
+            .container-cards-reviews
+                .card-reviews
+                    p.card-reviews__text.
+                        Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице
+                        с начала XVI века.
+                    .card-reviews__container-ava-name
+                        .card-reviews__ava
+                        .card-reviews__name Алексей Гарнага
+
+                .card-reviews
+                    p.card-reviews__text.
+                        Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице
+                        с начала XVI века.
+                    .card-reviews__container-ava-name
+                        .card-reviews__ava
+                        .card-reviews__name Алексей Гарнага
+                
+                .card-reviews
+                    p.card-reviews__text.
+                        Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице
+                        с начала XVI века.
+                    .card-reviews__container-ava-name
+                        .card-reviews__ava
+                        .card-reviews__name Алексей Гарнага
+        script(src="js/jquery.paroller.js")
+
+        +footer()

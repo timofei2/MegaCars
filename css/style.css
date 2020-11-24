@@ -1,0 +1,239 @@
+.first-screen {
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.form {
+    position: relative;
+    padding: 70px 0;
+    background-color: #FFFAF7;
+    width: 40%;
+    overflow: hidden;
+}
+
+.form__figure {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    right: 25%;
+    background-image: url(../img/big-form.png);
+    width: 169px;
+    height: 172px;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.form__content {
+    max-width: 232px;
+    margin: auto;
+    position: relative;
+}
+
+.form__info-users {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2px;
+}
+
+.form__fields {
+    font-family: 'Montserrat', sans-serif;
+    color: #907879;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.form__btn {
+    display: block;
+    width: 100%;
+}
+
+.first-car {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.first-car__img-car {
+    position: relative;
+    background-image: url(../img/largus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85%;
+    height: 400px;
+    margin: auto;
+}
+
+.first-car__starting-price {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.first-car__starting-price span:nth-child(2) {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #CC3C3C;
+}
+
+.first-car__starting-price span:nth-child(1),.first-car__starting-price span:nth-child(3) {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-title__red-text {
+    color: #C61717;
+}
+
+.how-work {
+    margin-bottom: 100px;
+}
+
+.container-steps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.step-work__img {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.search-auto {
+    background-image: url(../img/icons/search-auto.png);
+}
+
+.send-request {
+    background-image: url(../img/icons/send-request.png);
+}
+
+.take-car {
+    background-image: url(../img/icons/take-car.png);
+}
+
+.step-work__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.step-work__text {
+    color: #917F81;
+    white-space: pre-line;
+    margin: 0;
+    line-height: 20px;
+}
+
+.step-work__arrow {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.others-cars {
+    margin-bottom: 100px;
+}
+
+.title-others-cars {
+    margin-top: 80px;
+}
+
+.btn-all {
+    background-color: #FFCF00;
+    width: 180px;
+    margin: auto;
+    color: #f3eaee;
+}
+
+.btn-all:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.reviews {
+    margin-bottom: 84px;
+    counter-reset: number;
+}
+
+.container-cards-reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+.card-reviews {
+    position: relative;
+    width: 49%;
+    margin: 0 0.5%;
+    background-color: #fff6f1;
+    border-radius: 8px;
+    padding: 48px;
+    margin-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-reviews::after {
+    position: absolute;
+    content: "";
+    bottom: 48px;
+    right: 48px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    counter-increment: number;
+    content: counters(number,".") "";
+}
+
+.card-reviews__text {
+    margin-bottom: 20px;
+}
+
+.card-reviews__container-ava-name {
+    display: flex;
+    align-items: center;
+}
+
+.card-reviews__ava {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../img/client.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.card-reviews__name {
+    font-weight: 500;
+}
+
+.container-text-about {
+    max-width: 754px;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    margin-bottom: 74px;
+}
+
+.container-text-about p {
+    line-height: 26px;
+}
